@@ -512,7 +512,7 @@ class Torrent:
             return 0
 
     @queue_position.setter
-    def queue_position(self, position: str) -> None:
+    def queue_position(self, position: int) -> None:
         """Queue position"""
         if self._rpc_version() >= 14:
             if isinstance(position, int):
